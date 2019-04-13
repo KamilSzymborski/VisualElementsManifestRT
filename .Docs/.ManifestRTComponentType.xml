@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      [serializable] Ready-To component type.
+    </summary>
+  </header>
+  <value name="Manifest">
+    <summary>
+      Specifies the XML schema.
+    </summary>
+  </value>
+  <value name="Square70x70Logo">
+    <summary>
+      Specifies the 70x70 logo as related data.
+    </summary>
+  </value>
+  <value name="Square150x150Logo">
+    <summary>
+      Specifies the 150x150 logo as related data.
+    </summary>
+  </value>
+</docs>

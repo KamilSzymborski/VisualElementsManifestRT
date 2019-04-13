@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      [serializable] Ready-To component (contains a compiled component whose data can be used for installation or uninstallation).
+    </summary>
+  </header>
+  <property name="Data">
+    <summary>
+      Raw data.
+    </summary>
+  </property>
+  <property name="FileName">
+    <summary>
+      Relative path \ full name.
+    </summary>
+  </property>
+</docs>

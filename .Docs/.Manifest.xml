@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      [serializable] Composite data (contains data that can be used for recompilation).
+    </summary>
+  </header>
+    <property name="BackgroundColor">
+      <summary>
+        [nullable] Value of BackgroundColor.
+      </summary>
+    </property>
+    <property name="LightForegroundText">
+      <summary>
+        [nullable] Value of ForegroundText.
+      </summary>
+    </property>
+    <property name="ShowNameOnSquare150x150Logo">
+      <summary>
+        [nullable] Value of ShowNameOnSquare150x150Logo.
+      </summary>
+    </property>
+    <property name="Square70x70LogoData">
+      <summary>
+        [can be null] Raw data of Square70x70Logo.
+      </summary>
+    </property>
+    <property name="Square150x150LogoData">
+      <summary>
+        [can be null] Raw data of Square150x150Logo.
+      </summary>
+    </property>
+    <property name="Square70x70LogoName">
+      <summary>
+        [can be null] Short name (without extension) of Square70x70Logo.
+      </summary>
+    </property>
+    <property name="Square150x150LogoName">
+      <summary>
+        [can be null] Short name (without extension) of Square150x150Logo.
+      </summary>
+    </property>
+    <property name="Square70x70LogoFormat">
+      <summary>
+        [can be null] Format of Square70x70Logo. Without dot | ".".
+      </summary>
+    </property>
+    <property name="Square150x150LogoFormat">
+      <summary>
+        [can be null] Format of Square150x150Logo. Without dot | ".".
+      </summary>
+    </property>
+    <property name="Square70x70LogoDirectoryPath">
+      <summary>
+        [can be null][can be empty] Relative path to directory of Square70x70Logo.
+      </summary>
+    </property>
+    <property name="Square150x150LogoDirectoryPath">
+      <summary>
+        [can be null][can be empty] Relative path to directory of Square150x150Logo. 
+      </summary>
+    </property>
+</docs>
