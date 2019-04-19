@@ -40,12 +40,12 @@
             return Compiler.Compile(AppName, BackgroundColor, LightForegroundText, ShowNameOnSquare150x150Logo, Square70x70LogoData, Square150x150LogoData, AutodetectFormat ? Square70x70LogoName : PathService.GetShortName(Square70x70LogoName), AutodetectFormat ? Square150x150LogoName : PathService.GetShortName(Square150x150LogoName), AutodetectFormat ? ImageService.GetKnownFormat(Square70x70LogoData) : PathService.GetFileExtension(Square70x70LogoName), AutodetectFormat ? ImageService.GetKnownFormat(Square150x150LogoData) : PathService.GetFileExtension(Square150x150LogoName), Square70x70LogoDirectoryPath, Square150x150LogoDirectoryPath);
         }
         /// <include file=".Docs/.ManifestRTService.xml" path="docs/method[@name='Decompile(ManifestRTProcessingResult ProcessingResult)']/*"/>
-        public static (int? BackgroundColor, bool? LightForegroundText, bool? ShowNameOnSquare150x150Logo, byte[] Square70x70LogoData, byte[] Square150x150LogoData, string Square70x70LogoName, string Square150x150LogoName, string Square70x70LogoFormat, string Square150x150LogoFormat, string Square70x70LogoDirectoryPath, string Square150x150LogoDirectoryPath) Decompile(ManifestRTProcessingResult ProcessingResult)
+        public static ManifestRTDecompilationResult Decompile(ManifestRTProcessingResult ProcessingResult)
         {
             return Decompiler.Decompile(ProcessingResult);
         }
         /// <include file=".Docs/.ManifestRTService.xml" path="docs/method[@name='Decompile(ManifestRTCompilationResult CompilationResult)']/*"/>
-        public static (int? BackgroundColor, bool? LightForegroundText, bool? ShowNameOnSquare150x150Logo, byte[] Square70x70LogoData, byte[] Square150x150LogoData, string Square70x70LogoName, string Square150x150LogoName, string Square70x70LogoFormat, string Square150x150LogoFormat, string Square70x70LogoDirectoryPath, string Square150x150LogoDirectoryPath) Decompile(ManifestRTCompilationResult CompilationResult)
+        public static ManifestRTDecompilationResult Decompile(ManifestRTCompilationResult CompilationResult)
         {
             return Decompiler.Decompile(CompilationResult);
         }
