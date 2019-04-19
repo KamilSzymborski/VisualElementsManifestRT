@@ -10,7 +10,7 @@ namespace KamilSzymborski.VisualElementsManifestRT
         internal static bool Exists(string Path)
         {
             return File.Exists(Path);
-        } 
+        }
         internal static byte[] ReadAsBytes(string Path)
         {
             byte[] Data = null;

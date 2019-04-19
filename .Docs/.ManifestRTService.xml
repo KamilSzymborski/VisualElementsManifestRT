@@ -2,7 +2,7 @@
 
 <docs>
   <header>
-    <summary>u
+    <summary>
       Main service.
     </summary>
   </header>
@@ -14,7 +14,21 @@
       full path to the manifest file.
     </param>
     <returns>
-      true: if can be processed; false: if not.
+      True: if can be processed; False: if not.
+    </returns>
+  </method>
+  <method name="CanBeProcessed(string, string)">
+    <summary>
+      Estimates whether processing will succeed.
+    </summary>
+    <param name="AppDirectory">
+      path to the application directory (there where is exe).
+    </param>
+    <param name="AppName">
+      short application name, for example: "Application" for "Application.exe".
+    </param>
+    <returns>
+      True: if can be processed; False: if not.
     </returns>
   </method>
   <method name="Process(string)">
@@ -25,7 +39,21 @@
       full path to the manifest file.
     </param>
     <returns>
-      ready-to package.
+      Ready-To package.
+    </returns>
+  </method>
+  <method name="Process(string, string)">
+    <summary>
+      Processes the manifest and related data as a so-called "Ready-To" package.
+    </summary>
+    <param name="AppDirectory">
+      path to the application directory (there where is exe).
+    </param>
+    <param name="AppName">
+      short application name, for example: "Application" for "Application.exe".
+    </param>
+    <returns>
+      Ready-To package.
     </returns>
   </method>
   <method name="Compile(string, int, bool, bool)">
@@ -45,7 +73,89 @@
       On or Off?
     </param>
     <returns>
-      ready-to package.
+      Ready-To package.
+    </returns>
+  </method>
+  <method name="Compile(string, int, bool, bool, byte[], byte[], string, string, string, string)">
+    <summary>
+      Compiles a so-called "Ready-To" package.
+    </summary>
+    <param name="AppName">
+      the name of the application, for example: "firefox".
+    </param>
+    <param name="BackgroundColor">
+      RGB stored in int.
+    </param>
+    <param name="LightForegroundText">
+      Light or Dark?
+    </param>
+    <param name="ShowNameOnSquare150x150Logo">
+      On or Off?
+    </param>
+    <param name="Square70x70LogoData">
+      max200KB; max1024x1024px; jpg/png/gif - Microsoft - but it is not true (u can test size and resolution).
+    </param>
+    <param name="Square150x150LogoData">
+      max200KB; max1024x1024px; jpg/png/gif - Microsoft - but it is not true (u can test size and resolution).
+    </param>
+    <param name="Square70x70LogoName">
+      short name.
+    </param>
+    <param name="Square150x150LogoName">
+      short name.
+    </param>
+    <param name="Square70x70LogoFormat">
+      format without dot, for exmaple: "png".
+    </param>
+    <param name="Square150x150LogoFormat">
+      format without dot, for exmaple: "png".
+    </param>
+    <returns>
+      Ready-To package.
+    </returns>
+  </method>
+  <method name="Compile(string, int, bool, bool, byte[], byte[], string, string, string, string, string, string)">
+    <summary>
+      Compiles a so-called "Ready-To" package.
+    </summary>
+    <param name="AppName">
+      the name of the application, for example: "firefox".
+    </param>
+    <param name="BackgroundColor">
+      RGB stored in int.
+    </param>
+    <param name="LightForegroundText">
+      Light or Dark?
+    </param>
+    <param name="ShowNameOnSquare150x150Logo">
+      On or Off?
+    </param>
+    <param name="Square70x70LogoData">
+      max200KB; max1024x1024px; jpg/png/gif - Microsoft - but it is not true (u can test size and resolution).
+    </param>
+    <param name="Square150x150LogoData">
+      max200KB; max1024x1024px; jpg/png/gif - Microsoft - but it is not true (u can test size and resolution).
+    </param>
+    <param name="Square70x70LogoName">
+      short name.
+    </param>
+    <param name="Square150x150LogoName">
+      short name.
+    </param>
+    <param name="Square70x70LogoFormat">
+      format without dot, for exmaple: "png".
+    </param>
+    <param name="Square150x150LogoFormat">
+      format without dot, for exmaple: "png".
+    </param>
+    <param name="Square70x70LogoDirectoryPath">
+      relative path to image directory, example: "app-resources\images".
+    </param>
+    <param name="Square150x150LogoDirectoryPath">
+      relative path to image directory, example: "app-resources\images".
+    </param>
+    <returns>
+      Ready-To package.
     </returns>
   </method>
   <method name="Compile(string, int, bool, bool, byte[], byte[], bool, string, string)">
@@ -74,13 +184,13 @@
       [recommended]  the image format will be detected by a binary signature.
     </param>
     <param name="Square70x70LogoName">
-      Compile.AutodetectFormat? short name : full name.
+      AutodetectFormat? short name : full name.
     </param>
     <param name="Square150x150LogoName">
       AutodetectFormat? short name : full name.
     </param>
     <returns>
-      ready-to package.
+      Ready-To package.
     </returns>
   </method>
   <method name="Compile(string, int, bool, bool, byte[], byte[], bool, string, string, string, string)">
@@ -121,29 +231,29 @@
       relative path to image directory, example: "app-resources\images".
     </param>
     <returns>
-      ready-to package.
+      Ready-To package.
     </returns>
   </method>
   <method name="Decompile(ManifestRTCompilationResult CompilationResult)">
     <summary>
-      decompiles the compiled data to composite data.
+      Decompiles the compiled data to composite data.
     </summary>
     <param name="CompilationResult">
       ready-to package created from the compilation process.
     </param>
     <returns>
-      composite data.
+      Composite data.
     </returns>
   </method>
   <method name="Decompile(ManifestRTProcessingResult ProcessingResult)">
     <summary>
-      decompiles the compiled data to composite data.
+      Decompiles the compiled data to composite data.
     </summary>
     <param name="ProcessingResult">
       ready-to package created from the processing process.
     </param>
     <returns>
-      composite data.
+      Composite data.
     </returns>
   </method>
 </docs>

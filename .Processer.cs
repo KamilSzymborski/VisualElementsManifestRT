@@ -17,7 +17,7 @@ namespace KamilSzymborski.VisualElementsManifestRT
 
             
             var VisualElements = ManifestService.Parse(Manifest);
-            // if is basic version (without logos) - ok
+            // if is basic version (without images) - ok
             if (VisualElements.IsSquare70x70LogoAndSquare150x150LogoSet() == false) return true;
 
              
