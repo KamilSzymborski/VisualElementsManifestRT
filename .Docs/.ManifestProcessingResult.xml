@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      [serializable] Components ready for installation / uninstallation, created from (this is irrelevant) processing process.
+    </summary>
+  </header>
+</docs>

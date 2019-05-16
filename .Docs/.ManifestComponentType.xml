@@ -3,7 +3,7 @@
 <docs>
   <header>
     <summary>
-      [serializable] Ready-To component type.
+      [serializable] Type of component.
     </summary>
   </header>
   <value name="Manifest">

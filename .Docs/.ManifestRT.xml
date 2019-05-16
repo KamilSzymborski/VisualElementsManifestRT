@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
-<docs>
-  <header>
-    <summary>
-      [serializable] Ready-To package (contains all compiled components whose data can be used for installation or uninstallation).
-    </summary>
-  </header>
-</docs>

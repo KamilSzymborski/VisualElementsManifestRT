@@ -3,12 +3,12 @@
 
 namespace KamilSzymborski.VisualElementsManifestRT
 {
-    /// <include file=".Docs/.ManifestRTComponentData.xml" path="docs/header"/>
+    /// <include file=".Docs/.ManifestComponentData.xml" path="docs/header"/>
     [Serializable]
-    public sealed class ManifestRTComponentData
+    public sealed class ManifestComponentData
     {
         #region Constructors
-        internal ManifestRTComponentData(byte[] Data, string FileName)
+        internal ManifestComponentData(byte[] Data, string FileName)
         {
             mData = Data;
             mFileName = FileName;
@@ -16,9 +16,9 @@ namespace KamilSzymborski.VisualElementsManifestRT
         #endregion
 
         #region Properties
-        /// <include file=".Docs/.ManifestRTComponentData.xml" path="docs/property[@name='Data']/*"/>
+        /// <include file=".Docs/.ManifestComponentData.xml" path="docs/property[@name='Data']/*"/>
         public byte[] Data { get { return mData; } }
-        /// <include file=".Docs/.ManifestRTComponentData.xml" path="docs/property[@name='FileName']/*"/>
+        /// <include file=".Docs/.ManifestComponentData.xml" path="docs/property[@name='FileName']/*"/>
         public string FileName { get { return mFileName; } }
         #endregion
 

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Main service.
+    </summary>
+  </header>
+  <method name="CanBeProcessed(string)">
+    <summary>
+      Estimates whether processing will succeed.
+    </summary>
+    <param name="Path">
+      full path to the manifest file.
+    </param>
+    <returns>
+      True: if can be processed; False: if not.
+    </returns>
+  </method>
+  <method name="CanBeProcessed(string, string)">
+    <summary>
+      Estimates whether processing will succeed.
+    </summary>
+    <param name="AppDirectory">
+      path to the application directory (there where is exe).
+    </param>
+    <param name="AppName">
+      short application name, for example: "Application" for "Application.exe".
+    </param>
+    <returns>
+      True: if can be processed; False: if not.
+    </returns>
+  </method>
+  <method name="Process(string)">
+    <summary>
+      Processes the manifest and related data, to components ready to installation / uninstallation.
+    </summary>
+    <param name="Path">
+      full path to the manifest file.
+    </param>
+    <returns>
+      collection of components.
+    </returns>
+  </method>
+  <method name="Process(string, string)">
+    <summary>
+      Processes the manifest and related data, to components ready to installation / uninstallation.
+    </summary>
+    <param name="AppDirectory">
+      path to the application directory (there where is exe).
+    </param>
+    <param name="AppName">
+      short application name, for example: "Application" for "Application.exe".
+    </param>
+    <returns>
+      collection of components.
+    </returns>
+  </method>
+  <method name="Compile(string, int, bool, bool)">
+    <summary>
+      Compiles to components ready to installation / uninstallation.
+    </summary>
+    <param name="AppName">
+      the name of the application, for example: "firefox".
+    </param>
+    <param name="BackgroundColor">
+      RGB.
+    </param>
+    <param name="LightForegroundText">
+      Light or Dark?
+    </param>
+    <param name="ShowNameOnSquare150x150Logo">
+      On or Off?
+    </param>
+    <returns>
+      components ready to installation / uninstallation.
+    </returns>
+  </method>
+  <method name="Compile(string, int, bool, bool, byte[], byte[], string, string, string, string, string, string)">
+    <summary>
+      Compiles to components ready to installation / uninstallation.
+    </summary>
+    <param name="AppName">
+      the name of the application, for example: "firefox".
+    </param>
+    <param name="BackgroundColor">
+      RGB stored in int.
+    </param>
+    <param name="LightForegroundText">
+      Light or Dark?
+    </param>
+    <param name="ShowNameOnSquare150x150Logo">
+      On or Off?
+    </param>
+    <param name="Square70x70LogoData">
+      data of jpg, png or gif.
+    </param>
+    <param name="Square150x150LogoData">
+      data of jpg, png or gif.
+    </param>
+    <param name="Square70x70LogoName">
+      short name. Format will be detected or added.
+    </param>
+    <param name="Square150x150LogoName">
+      short name. Format will be detected or added.
+    </param>
+    <param name="OptionalSquare70x70LogoFormat">
+      format of image data without dot, for exmaple: "png".
+    </param>
+    <param name="OptionalSquare150x150LogoFormat">
+      format of image data without dot, for exmaple: "png".
+    </param>
+    <param name="OptionalSquare70x70LogoDirectoryPath">
+      relative path to image directory, example: "app-resources\images".
+    </param>
+    <param name="OptionalSquare150x150LogoDirectoryPath">
+      relative path to image directory, example: "app-resources\images".
+    </param>
+    <returns>
+      components ready to installation / uninstallation.
+    </returns>
+  </method>
+  <method name="Decompile(ManifestRTCompilationResult CompilationResult)">
+    <summary>
+      Decompiles the collection of components.
+    </summary>
+    <param name="CompilationResult">
+      components created from the compilation process.
+    </param>
+    <returns>
+      Composite data.
+    </returns>
+  </method>
+  <method name="Decompile(ManifestRTProcessingResult ProcessingResult)">
+    <summary>
+      Decompiles the collection of components.
+    </summary>
+    <param name="ProcessingResult">
+      components created from the processing process.
+    </param>
+    <returns>
+      Composite data.
+    </returns>
+  </method>
+</docs>

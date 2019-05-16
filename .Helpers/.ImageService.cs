@@ -7,7 +7,7 @@ namespace KamilSzymborski.VisualElementsManifestRT
     internal static class ImageService
     {
         #region Methods
-        internal static string GetKnownFormat(byte[] Data)
+        internal static string GetFormat(byte[] Data)
         {
             return HEADERS.Single(Header => Data.Take(Header.Value.Length).SequenceEqual(Header.Value)).Key;
         }

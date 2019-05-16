@@ -3,7 +3,7 @@
 <docs>
   <header>
     <summary>
-      [serializable] Ready-To package created from the processing process.
+      [serializable] Components ready for installation / uninstallation.
     </summary>
   </header>
 </docs>

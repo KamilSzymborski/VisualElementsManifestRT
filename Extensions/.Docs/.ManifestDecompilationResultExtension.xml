@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Extension for ManifestDecompilationResult.
+    </summary>
+  </header>
+  <method name="ContainsImagesData()">
+    <summary>
+      Determines whether the set is an extended set (with images data) or basic set.
+    </summary>
+    <returns>
+      True: if is extended; False: if not.
+    </returns>
+  </method>
+</docs>

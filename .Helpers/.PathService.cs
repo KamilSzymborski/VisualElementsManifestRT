@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿using Net = System.IO;
 
 
 namespace KamilSzymborski.VisualElementsManifestRT
@@ -8,31 +8,27 @@ namespace KamilSzymborski.VisualElementsManifestRT
         #region Methods
         internal static string CombineName(string Name, string Extension)
         {
-            return Path.ChangeExtension(Name, Extension);
+            return Net.Path.ChangeExtension(Name, Extension);
         }
         internal static string CombinePath(string Part1, string Part2)
         {
-            return Path.Combine(Part1, Part2);
+            return Net.Path.Combine(Part1, Part2);
         }
-        internal static string GetFileName(string FilePath)
+        internal static string GetFileName(string Path)
         {
-            return Path.GetFileName(FilePath);
+            return Net.Path.GetFileName(Path);
         }
-        internal static string GetFileExtension(string FilePath)
+        internal static string GetFileExtension(string Path)
         {
-            return Path.GetExtension(FilePath).Substring(1);
+            return Net.Path.GetExtension(Path).Substring(1);
         }
-        internal static string GetShortName(string FilePath)
+        internal static string GetShortName(string Path)
         {
-            return Path.GetFileNameWithoutExtension(FilePath);
+            return Net.Path.GetFileNameWithoutExtension(Path);
         }
-        internal static string GetDirectoryPath(string FilePath)
+        internal static string GetDirectoryPath(string Path)
         {
-            return Path.GetDirectoryName(FilePath);
-        }
-        internal static string DetermineFullPath(string DirectoryPath, string FilePath)
-        {
-            return Path.IsPathRooted(FilePath) ? FilePath : Path.Combine(DirectoryPath, FilePath);
+            return Net.Path.GetDirectoryName(Path);
         }
         #endregion
     }

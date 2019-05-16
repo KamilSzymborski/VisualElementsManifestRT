@@ -3,7 +3,7 @@
 <docs>
   <header>
     <summary>
-      [serializable] Ready-To component (contains a compiled component whose data can be used for installation or uninstallation).
+      [serializable] Component ready for installation / uninstallation.
     </summary>
   </header>
   <property name="Data">
