@@ -6,32 +6,15 @@
       Will help you to create the physical representation of the components.
     </summary>
   </header>
-  <method name="Install(string, ManifestCompilationResult, bool)">
+  <method name="Install(string, ManifestComponents, bool)">
     <summary>
       Creates a physical representation of components for the given path.
     </summary>
     <param name="AppDirectory">
       full path to the application directory (there where is exe).
     </param>
-    <param name="CompilationResult">
-      the result of the compilation process.
-    </param>
-    <param name="ThrowExceptions">
-      throws standard io exceptions. In most cases it will be  <see cref="System.UnauthorizedAccessException"/>.
-    </param>
-    <returns>
-      True: if is success; False: if not.
-    </returns>
-  </method>
-  <method name="Install(string, ManifestProcessingResult, bool)">
-    <summary>
-      Creates a physical representation of components for the given path.
-    </summary>
-    <param name="AppDirectory">
-      full path to the application directory (there where is exe).
-    </param>
-    <param name="ProcessingResult">
-      the result of the processing process.
+    <param name="Components">
+      compiled components.
     </param>
     <param name="ThrowExceptions">
       throws standard io exceptions. In most cases it will be  <see cref="System.UnauthorizedAccessException"/>.
